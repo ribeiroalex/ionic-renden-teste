@@ -25,7 +25,7 @@ const bots = [
 ];
 
 app.use(rendertron.makeMiddleware({
-	proxyUrl: "https://render.example.com/render",
+	proxyUrl: "https://fair-terminus-245617.appspot.com/render",
 	userAgentPattern: new RegExp(bots.join('|'), 'i')
 }));
 
