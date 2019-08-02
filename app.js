@@ -13,7 +13,7 @@ app.use(rendertron.makeMiddleware({
     proxyUrl: 'https://fair-terminus-245617.appspot.com/render',
 }));
 
-app.use(express.static(path.join(__dirname, 'dist')));
+app.use(express.static('www'));
 app.use('*', express.static(path.join(__dirname, 'dist')));
 
 module.exports = app;
